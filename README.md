@@ -1,3 +1,3 @@
 # DSA-Daily-Practice
 Daily DSA problems in Java (LeetCode + Concepts) 
-| Day 1 | Subarray Sum Equals K | Prefix Sum | Medium |
+This repo is a collection of my DSA practice. I regularly solve problems and push my solutions here to track my progress and get better at problem solving
