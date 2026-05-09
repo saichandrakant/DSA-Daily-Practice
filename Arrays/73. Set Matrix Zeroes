@@ -1,0 +1,41 @@
+//https://leetcode.com/problems/set-matrix-zeroes/description/
+class Solution {
+    class Pair
+    {
+        int row;
+        int clm;
+        Pair(int row,int clm)
+        {
+            this.row=row;
+            this.clm=clm;
+        }
+    }
+    public void setZeroes(int[][] mat) {
+       Queue<Pair> queue=new LinkedList<>();
+        for(int i=0;i<mat.length;i++)
+        {
+            for(int j=0;j<mat[0].length;j++)
+            {
+                if(mat[i][j]==0)
+                {
+                    queue.add(new Pair(i,j));
+                }
+            }
+        }
+        while(!queue.isEmpty())
+        {
+            int row=queue.peek().row;
+            int clm=queue.peek().clm;
+            queue.poll();
+            for(int i=0;i<mat.length;i++)
+            {
+                mat[i][clm]=0;
+            }
+            for(int i=0;i<mat[0].length;i++)
+            {
+                mat[row][i]=0;
+            }
+        }
+    
+    }
+}
