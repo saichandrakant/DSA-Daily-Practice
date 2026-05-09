@@ -1,0 +1,36 @@
+https://leetcode.com/problems/sort-colors/description/
+class Solution {
+    public void sortColors(int[] arr) {
+           int cnt1=0;
+        int cnt2=0;
+        int cnt3=0;
+        for(int i=0;i<arr.length;i++)
+        {
+            if(arr[i]==0)
+            {
+                cnt1++;
+            }
+            if(arr[i]==1)
+            {
+                cnt2++;
+            }
+            if(arr[i]==2)
+            {
+                cnt3++;
+            }
+        }
+        for(int i=0;i<cnt1;i++)
+        {
+            arr[i]=0;
+        }
+        for(int i=cnt1;i<cnt1+cnt2;i++)
+        {
+            arr[i]=1;
+        }
+        for(int i=cnt1+cnt2;i<arr.length;i++)
+        {
+            arr[i]=2;
+        }
+
+    }
+}
