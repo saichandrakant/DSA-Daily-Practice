@@ -1,0 +1,33 @@
+https://www.geeksforgeeks.org/problems/find-missing-and-repeating2512/1
+class Solution {
+    ArrayList<Integer> findTwoElement(int arr[]) {
+
+        long n = arr.length;
+
+        long s = 0;
+        long sn = (n * (n + 1)) / 2;
+
+        long s2 = 0;
+        long s2a = (n * (n + 1) * (2 * n + 1)) / 6;
+
+        for (int i = 0; i < arr.length; i++) {
+            s = s + arr[i];
+            s2 = s2 + (long) arr[i] * arr[i];
+        }
+
+        long val = s - sn;       // x - y
+        long val2 = s2 - s2a;    // x² - y²
+
+        val2 = val2 / val;       // x + y
+
+        long x = (val + val2) / 2;
+        long y = x - val;
+
+        ArrayList<Integer> list = new ArrayList<>();
+
+        list.add((int) x); // repeating
+        list.add((int) y); // missing
+
+        return list;
+    }
+}
