@@ -1,0 +1,27 @@
+https://leetcode.com/problems/combination-sum/
+class Solution {
+    List<List<Integer>> list1=new ArrayList<>();
+    public List<List<Integer>> combinationSum(int[] candidates, int target) {
+        List<Integer> list=new ArrayList<>();
+        com(list,candidates,target,0);
+        return list1;
+    }
+      void com(List<Integer> list,int[] candidates,int target,int i)
+    {
+        if(i==candidates.length)
+        {
+            if(target==0)
+            {
+                list1.add(new ArrayList<>(list));
+            }
+             return;
+        }
+        if(candidates[i]<=target)
+        {
+            list.add(candidates[i]);
+            com(list,candidates,target-candidates[i],i);
+            list.remove(list.size()-1);
+        }
+        com(list,candidates,target,i+1);
+    }
+}
