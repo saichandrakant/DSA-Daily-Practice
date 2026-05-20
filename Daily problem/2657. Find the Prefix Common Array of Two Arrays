@@ -1,0 +1,32 @@
+https://leetcode.com/problems/find-the-prefix-common-array-of-two-arrays/description/?envType=daily-question&envId=2026-05-20
+class Solution {
+    public int[] findThePrefixCommonArray(int[] A, int[] B) {
+        int[] hash=new int[A.length+1];
+        int[] arr=new int[A.length];
+        int cnt=0;
+        for(int i=0;i<A.length;i++)
+        {
+            hash[A[i]]++;
+            hash[B[i]]++;
+             if(A[i]==B[i])
+            {
+                cnt++;
+            }
+            else if(hash[A[i]]==2 && hash[B[i]]==2)
+            {
+                cnt=cnt+2;
+            }
+            else if(hash[A[i]]==2 || hash[B[i]]==2)
+            {
+                cnt=cnt+1; 
+            }
+            else
+            {
+                cnt=cnt+0;
+            }
+            arr[i]=cnt;
+        }
+        return arr;
+    }
+
+}
