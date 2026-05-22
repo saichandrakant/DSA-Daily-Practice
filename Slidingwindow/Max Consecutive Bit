@@ -1,0 +1,22 @@
+https://www.geeksforgeeks.org/problems/max-consecutive-one/1
+class Solution {
+    public int maxConsecBits(int[] arr) {
+        // code here
+        int  l=0;
+        int r=0;
+        int ans=0;
+        while(r<arr.length)
+        {
+            while(arr[l]!=arr[r])
+            {
+                l++;
+            }
+            if(arr[l]==arr[r])
+            {
+                ans=Math.max(ans,r-l+1);
+            }
+            r++;
+        }
+        return ans;
+    }
+}
