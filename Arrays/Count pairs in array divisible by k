@@ -1,0 +1,17 @@
+https://www.geeksforgeeks.org/problems/count-pairs-in-array-divisible-by-k/1
+class Solution {
+    public int countKdivPairs(int[] arr, int k) {
+
+        int[] freq = new int[k];
+        int cnt = 0;
+
+        for (int num:arr) {
+            int rem = num % k;
+            int need = (k - rem) % k;
+            cnt += freq[need];
+            freq[rem]++;
+        }
+
+        return cnt;
+    }
+}
