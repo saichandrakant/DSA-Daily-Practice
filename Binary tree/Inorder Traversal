@@ -1,0 +1,29 @@
+https://www.geeksforgeeks.org/batch/gfg-160-problems/track/tree-gfg-160/problem/inorder-traversal
+/*
+class Node {
+    int data;
+    Node left, right;
+    Node(int item){
+        data = item;
+        left = right = null;
+    }
+}
+*/
+class Solution {
+    ArrayList<Integer>list=new ArrayList<>();
+    public ArrayList<Integer> inOrder(Node root) {
+        inorder(root);
+       return list;
+    }
+    void inorder(Node root)
+    {
+        if(root==null)
+        {
+            return;
+        }
+        
+        inorder(root.left);
+        list.add(root.data);
+        inorder(root.right);
+    }
+}
