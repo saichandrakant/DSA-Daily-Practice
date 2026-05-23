@@ -1,0 +1,31 @@
+https://www.geeksforgeeks.org/batch/gfg-160-problems/track/tree-gfg-160/problem/height-of-binary-tree
+/*
+Definition for Node
+class Node {
+    int data;
+    Node left, right;
+
+    Node(int val)
+    {
+        data = val;
+        left = right = null;
+    }
+}
+*/
+
+class Solution {
+    public int height(Node root) {
+        // code here
+       return rec(root)-1;
+    }
+    int rec(Node root)
+    {
+         if(root==null)
+        {
+            return 0;
+        }
+        int left=rec(root.left);
+        int right=rec(root.right);
+        return Math.max(left,right)+1;
+    }
+}
