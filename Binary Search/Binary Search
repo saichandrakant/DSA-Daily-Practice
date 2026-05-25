@@ -1,0 +1,25 @@
+https://www.geeksforgeeks.org/problems/who-will-win-1587115621/1
+class Solution {
+    public boolean binarySearch(int[] arr, int k) {
+        // code here
+        int st=0;
+        int en=arr.length-1;
+        while(st<=en)
+        {
+            int mid=st+(en-st)/2;
+            if(arr[mid]==k)
+            {
+                return true;
+            }
+            else if(k>arr[mid])
+            {
+                st=mid+1;
+            }
+            else
+            {
+                en=mid-1;
+            }
+        }
+        return false;
+    }
+}
