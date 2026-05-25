@@ -1,0 +1,31 @@
+https://leetcode.com/problems/jump-game-vii/description/?envType=daily-question&envId=2026-05-25
+class Solution {
+    public boolean canReach(String s, int minJump, int maxJump) {
+        Queue<Integer> queue=new LinkedList<>();
+        queue.add(0);
+        int far=0;
+        boolean[] vis=new  boolean[s.length()];
+        vis[0]=true;
+        while(!queue.isEmpty())
+        {
+            int index=queue.poll();
+            if(index==s.length()-1)
+            {
+                return true;
+            }
+            int start=Math.max(index+minJump,far+1);
+            int end=Math.min(index+maxJump,s.length()-1);
+            for(int i=start;i<=end;i++)
+            {
+                if(s.charAt(i)=='0' &&!vis[i] )
+                {
+                    queue.add(i);
+                    vis[i]=true;
+                }
+            }
+            far=index+maxJump;
+        }
+
+        return false;
+    }
+}
