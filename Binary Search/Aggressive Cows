@@ -1,0 +1,43 @@
+https://www.geeksforgeeks.org/problems/aggressive-cows/1
+class Solution {
+    public int aggressiveCows(int[] stalls, int k) {
+        Arrays.sort(stalls);
+        int start=1;
+        int ans=0;
+        int end=stalls[stalls.length-1]-stalls[0];
+        while(start<=end)
+        {
+            int mid=start+(end-start)/2;
+            if(exist(stalls,mid,k))
+            {
+                ans=mid;
+                start=mid+1;
+            }
+            else
+            {
+                end=mid-1;
+            }
+        }
+        return ans;
+    }
+    boolean exist(int[] stalls,int d,int k)
+    {
+        int cnt=1;
+        int last=stalls[0];
+        for(int i=1;i<stalls.length;i++)
+        {
+            if(stalls[i]-last>=d)
+            {
+                
+                cnt++;
+                last=stalls[i];
+            }
+            if(cnt>=k)
+            {
+                return true;
+            }
+        }
+        return false;
+    }
+
+}
