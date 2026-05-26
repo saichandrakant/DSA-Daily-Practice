@@ -1,0 +1,58 @@
+https://www.geeksforgeeks.org/problems/allocate-minimum-number-of-pages0937/1
+class Solution {
+
+    public int findPages(int[] arr, int k) {
+
+        if(k > arr.length) {
+            return -1;
+        }
+
+        int start = 0;
+        int end = 0;
+
+        for(int num : arr) {
+            start = Math.max(num, start);
+            end += num;
+        }
+
+        int ans = -1;
+
+        while(start <= end) {
+
+            int mid = start + (end - start) / 2;
+
+            if(exist(mid, k, arr)) {
+
+                ans = mid;
+                end = mid - 1;
+            }
+            else {
+
+                start = mid + 1;
+            }
+        }
+
+        return ans;
+    }
+
+    boolean exist(int maxpage, int k, int[] arr) {
+
+        int stud = 1;
+        int noofpage = 0;
+
+        for(int i = 0; i < arr.length; i++) {
+
+            if(noofpage + arr[i] <= maxpage) {
+
+                noofpage += arr[i];
+            }
+            else {
+
+                stud++;
+                noofpage = arr[i];
+            }
+        }
+
+        return stud <= k;
+    }
+}
