@@ -1,0 +1,45 @@
+https://www.geeksforgeeks.org/problems/check-if-linked-list-is-pallindrome/1
+/*
+class Node {
+    int data;
+    Node next;
+
+    Node(int d) {
+        data = d;
+        next = null;
+    }
+}*/
+
+class Solution {
+    public boolean isPalindrome(Node head) {
+        // code here
+        int size=0;
+        Node temp=head;
+        while(temp!=null)
+        {
+            size++;
+            temp=temp.next;
+        }
+        temp=head;
+        int i=0;
+        int[] ans=new int[size];
+         while(temp!=null)
+        {
+            ans[i]=temp.data;
+            temp=temp.next;
+            i++;
+        }
+        int start=0;
+        int end=ans.length-1;
+        while(start<end)
+        {
+            if(ans[start]!=ans[end])
+            {
+              return false;
+            }
+             start++;
+                end--;
+        }
+        return true;
+    }
+}
