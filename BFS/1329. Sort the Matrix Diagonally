@@ -1,0 +1,48 @@
+https://leetcode.com/problems/sort-the-matrix-diagonally/description/
+class Pair{
+    int row;
+    int clm;
+    Pair(int row,int clm)
+    {
+        this.row=row;
+        this.clm=clm;
+    }
+}
+class Solution {
+    public int[][] diagonalSort(int[][] mat) {
+        Queue<Pair>queue=new LinkedList<>();
+        PriorityQueue<Integer> queue1=new PriorityQueue<>();
+        for(int i=0;i<mat[0].length;i++)
+        {
+            queue.add(new Pair(0,i));
+        }
+        for(int i=1;i<mat.length;i++)
+        {
+            queue.add(new Pair(i,0));
+        }
+        while(!queue.isEmpty())
+        {
+            int row=queue.peek().row;
+            int clm=queue.peek().clm;
+            while(row<mat.length && clm<mat[0].length)
+            {
+                queue1.add(mat[row][clm]);
+                row++;
+                clm++;
+            }
+            while(!queue1.isEmpty())
+            {
+             row=queue.peek().row;
+             clm=queue.peek().clm;
+            queue.poll();
+            while(row<mat.length && clm<mat[0].length)
+            {
+               mat[row][clm]=queue1.poll();
+               row++;
+               clm++;
+            }
+            }
+        }
+        return mat;
+    }
+}
