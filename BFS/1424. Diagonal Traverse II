@@ -1,0 +1,40 @@
+https://leetcode.com/problems/diagonal-traverse-ii/description/
+class Pair
+{
+    int row;
+    int clm;
+    Pair(int row,int clm)
+    {
+        this.row=row;
+        this.clm=clm;
+    }
+}
+class Solution {
+    public int[] findDiagonalOrder(List<List<Integer>> nums) {
+        int total=0;
+        for(List<Integer> list:nums)
+        {
+            total=total+list.size();
+        }
+        int[] arr=new int[total];
+        Queue<Pair> queue=new LinkedList<>();
+        queue.add(new Pair(0,0));
+        int index=0;
+        while(!queue.isEmpty())
+        {
+            int row=queue.peek().row;
+            int clm=queue.peek().clm;
+            arr[index++]=nums.get(row).get(clm);
+            queue.poll();
+            if(clm==0 && row+1<nums.size())
+            {
+                queue.add(new Pair(row+1,clm));
+            }
+            if(clm+1<nums.get(row).size())
+            {
+                queue.add(new Pair(row,clm+1));
+            }
+        }
+        return arr;
+    }
+}
