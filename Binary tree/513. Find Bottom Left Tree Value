@@ -1,0 +1,49 @@
+https://leetcode.com/problems/find-bottom-left-tree-value/description/
+/**
+ * Definition for a binary tree node.
+ * public class TreeNode {
+ *     int val;
+ *     TreeNode left;
+ *     TreeNode right;
+ *     TreeNode() {}
+ *     TreeNode(int val) { this.val = val; }
+ *     TreeNode(int val, TreeNode left, TreeNode right) {
+ *         this.val = val;
+ *         this.left = left;
+ *         this.right = right;
+ *     }
+ * }
+ */
+class Solution {
+    int ans=0;
+    int res=0;
+    public int findBottomLeftValue(TreeNode root) {
+        if(root.left==null && root.right==null)
+        {
+            return root.val;
+        }
+        int cnt=0;
+        inorder(root,cnt);
+        return res;
+    }
+    void inorder(TreeNode root,int cnt)
+    {
+        if(root==null)
+        {
+           return;
+        }
+        if(root.left==null && root.right==null)
+        {
+            if(cnt>ans)
+            {
+                ans=Math.max(ans,cnt);
+                res=root.val;
+            }
+        }
+        else
+        {
+        inorder(root.left,cnt+1);
+        inorder(root.right,cnt+1);
+        }
+    }
+}
