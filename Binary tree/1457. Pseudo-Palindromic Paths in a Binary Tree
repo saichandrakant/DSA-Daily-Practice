@@ -1,0 +1,62 @@
+https://leetcode.com/problems/pseudo-palindromic-paths-in-a-binary-tree/description/
+/**
+ * Definition for a binary tree node.
+ * public class TreeNode {
+ *     int val;
+ *     TreeNode left;
+ *     TreeNode right;
+ *     TreeNode() {}
+ *     TreeNode(int val) { this.val = val; }
+ *     TreeNode(int val, TreeNode left, TreeNode right) {
+ *         this.val = val;
+ *         this.left = left;
+ *         this.right = right;
+ *     }
+ * }
+ */
+class Solution {
+    int cnt=0;
+    public int pseudoPalindromicPaths (TreeNode root) {
+        int[] hash=new int[10];
+        inorder(root,hash);
+        return cnt;
+    }
+    void inorder(TreeNode root,int[] hash)
+    {
+        if(root==null)
+        {
+            return;
+        }
+        hash[root.val]++;
+        if(root.left==null  && root.right==null)
+        {
+           
+            if(ispolindrome(hash))
+            {
+                cnt++;
+            }
+        }
+        else
+        {
+            inorder(root.left,hash);
+            inorder(root.right,hash);
+        }
+        hash[root.val]--;
+    }
+    boolean ispolindrome(int[] hash)
+    {
+        int cnt2=0;
+        for(int i=0;i<hash.length;i++)
+        {
+            if(hash[i]%2!=0)
+            {
+                cnt2++;
+            }
+            if(cnt2>1)
+            {
+                return false;
+            }
+        }
+        return true;
+    }
+}
