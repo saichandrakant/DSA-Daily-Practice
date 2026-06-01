@@ -1,0 +1,91 @@
+https://leetcode.com/problems/shortest-bridge/
+class Pair {
+    int row;
+    int clm;
+
+    Pair(int row, int clm) {
+        this.row = row;
+        this.clm = clm;
+    }
+}
+
+class Solution {
+
+    int[] rows = {-1, 1, 0, 0};
+    int[] clms = {0, 0, -1, 1};
+
+    public int shortestBridge(int[][] grid) {
+
+        Queue<Pair> queue = new LinkedList<>();
+        int[][] vis = new int[grid.length][grid[0].length];
+
+        boolean found = false;
+
+        for (int i = 0; i < grid.length && !found; i++) {
+            for (int j = 0; j < grid[0].length && !found; j++) {
+                if (grid[i][j] == 1) {
+                    dfs(i, j, grid, vis, queue);
+                    found = true;
+                }
+            }
+        }
+
+        int steps = 0;
+
+        while (!queue.isEmpty()) {
+
+            int size = queue.size();
+
+            for (int k = 0; k < size; k++) {
+
+                Pair curr = queue.poll();
+
+                int row = curr.row;
+                int clm = curr.clm;
+
+                for (int d = 0; d < 4; d++) {
+
+                    int rowsk = row + rows[d];
+                    int clmsk = clm + clms[d];
+
+                    if (rowsk < 0 || rowsk >= grid.length ||
+                        clmsk < 0 || clmsk >= grid[0].length)
+                        continue;
+
+                    if (vis[rowsk][clmsk] == 1)
+                        continue;
+
+                    if (grid[rowsk][clmsk] == 1)
+                        return steps;
+
+                    vis[rowsk][clmsk] = 1;
+                    queue.add(new Pair(rowsk, clmsk));
+                }
+            }
+
+            steps++;
+        }
+
+        return -1;
+    }
+
+    void dfs(int row, int clm, int[][] grid, int[][] vis, Queue<Pair> queue) {
+
+        vis[row][clm] = 1;
+        queue.add(new Pair(row, clm));
+
+        for (int d = 0; d < 4; d++) {
+
+            int rowsk = row + rows[d];
+            int clmsk = clm + clms[d];
+
+            if (rowsk < 0 || rowsk >= grid.length ||
+                clmsk < 0 || clmsk >= grid[0].length)
+                continue;
+
+            if (vis[rowsk][clmsk] == 0 && grid[rowsk][clmsk] == 1) {
+                dfs(rowsk, clmsk, grid, vis, queue);
+            }
+        }
+    }
+}
