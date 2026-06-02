@@ -1,0 +1,64 @@
+https://leetcode.com/problems/next-greater-element-iii/description/
+class Solution {
+    public int nextGreaterElement(int n) {
+        int k=n;
+        int size=0;
+        while(k>0)
+        {
+            k=k/10;
+            size++;
+        }
+        int[] arr=new int[size];
+        for(int i=arr.length-1;i>=0;i--)
+        {
+            arr[i]=n%10;
+            n=n/10;
+        }
+        int index=-1;
+        for(int i=arr.length-2;i>=0;i--)
+        {
+            if(arr[i]<arr[i+1])
+            {
+                index=i;
+                break;
+            }
+        }
+        if(index==-1)
+        {
+            return -1;
+        }
+        for(int i=arr.length-1;i>index;i--)
+        {
+            if(arr[i]>arr[index])
+            {
+                int temp=arr[i];
+                arr[i]=arr[index];
+                arr[index]=temp;
+                break;
+            }
+        }
+        reverse(index+1,arr.length-1,arr);
+        long ans=0;
+            for(int i=0;i<arr.length;i++)
+            {
+                ans=ans*10+arr[i];
+            }
+            if(ans > Integer.MAX_VALUE)
+            {
+                return -1;
+            }
+
+            return(int) ans;
+}
+void reverse(int start,int end,int[] arr)
+{
+    while(start<end)
+    {
+        int temp=arr[start];
+        arr[start]=arr[end];
+        arr[end]=temp;
+        start++;
+        end--;
+    }
+}
+}
