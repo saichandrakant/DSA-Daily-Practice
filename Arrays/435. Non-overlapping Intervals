@@ -1,0 +1,22 @@
+https://leetcode.com/problems/non-overlapping-intervals/description/
+class Solution {
+    public int eraseOverlapIntervals(int[][] intervals) {
+        List<int[]> list=new ArrayList<>();
+        int cnt=0;
+        Arrays.sort(intervals,(a,b)->Integer.compare(a[0],b[0]));
+        for(int[] interval:intervals)
+        {
+            if(list.isEmpty()|| list.get(list.size()-1)[1]<=interval[0])
+            {
+                list.add(interval);
+            }
+            else
+
+            {
+                list.get(list.size()-1)[1]=Math.min(interval[1],list.get(list.size()-1)[1]);
+                cnt++;
+            }
+        }
+        return cnt;
+    }
+}
