@@ -1,0 +1,19 @@
+https://leetcode.com/problems/left-and-right-sum-differences/description/?envType=daily-question&envId=2026-06-06
+class Solution {
+    public int[] leftRightDifference(int[] nums) {
+        int leftsum=0;
+        int rightsum=0;
+        int[] arr=new int[nums.length];
+        for(int i=0;i<nums.length;i++)
+        {
+            rightsum=rightsum+nums[i];
+        }
+        for(int i=0;i<nums.length;i++)
+        {
+            rightsum=rightsum-nums[i];
+            arr[i]=Math.abs(leftsum-rightsum);
+            leftsum=leftsum+nums[i];
+        }
+        return arr;
+    }
+}
