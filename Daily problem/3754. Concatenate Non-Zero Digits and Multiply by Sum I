@@ -1,0 +1,24 @@
+https://leetcode.com/problems/concatenate-non-zero-digits-and-multiply-by-sum-i/?envType=daily-question&envId=2026-07-07
+class Solution {
+    public long sumAndMultiply(int n) {
+        long sum=0;
+        long rem=0;
+        while(n>0)
+        {
+
+            sum=sum+n%10;
+            if(n%10!=0)
+            {
+                rem=rem*10+n%10;
+            }
+            n=n/10;
+        }
+        long rem1=0;
+        while(rem>0)
+        {
+            rem1=rem1*10+rem%10;
+            rem=rem/10;
+        }
+        return rem1*sum;
+    }
+}
