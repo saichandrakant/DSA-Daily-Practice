@@ -1,0 +1,21 @@
+https://www.geeksforgeeks.org/problems/non-overlapping-intervals/1
+class Solution {
+    public int minRemoval(int intervals[][]) {
+        // code here
+        int cnt=0;
+        int prev=Integer.MIN_VALUE;
+        Arrays.sort(intervals,(a,b)->a[1]-b[1]);
+        for(int[] arr:intervals)
+        {
+            if(arr[0]<prev)
+            {
+                cnt++;
+            }
+            else
+            {
+                prev=arr[1];
+            }
+        }
+        return cnt;
+    }
+}
