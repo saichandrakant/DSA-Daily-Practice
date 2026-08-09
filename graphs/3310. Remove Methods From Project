@@ -1,0 +1,57 @@
+https://leetcode.com/problems/remove-methods-from-project/description/?envType=daily-question&envId=2026-08-08
+class Solution {
+    public List<Integer> remainingMethods(int n, int k, int[][] invocations) {
+        List<Integer> list1 =new ArrayList<>();
+        List<List<Integer>> list=new ArrayList<>();
+        for (int i = 0; i < n; i++) {
+          list.add(new ArrayList<>());
+         }
+
+      for (int[] arr : invocations) {
+          list.get(arr[0]).add(arr[1]);
+        }
+        int[] vis=new int[n];
+        for(int i=0;i<n;i++)
+        {
+            vis[i]=-1;
+        }
+        Queue<Integer> queue=new LinkedList<>();
+        queue.add(k);
+        while(!queue.isEmpty())
+        {
+            int node=queue.poll();
+            vis[node]=0;
+            for(int neigh:list.get(node))
+            {
+                if(vis[neigh]==-1)
+                {
+                queue.add(neigh);
+                }
+            }
+        }
+        
+          for (int[] arr : invocations) {
+
+            int from = arr[0];
+            int to = arr[1];
+
+            if (vis[from] == -1 && vis[to] == 0) {
+
+                // Cannot remove suspicious methods
+                for (int i = 0; i < n; i++) {
+                    list1.add(i);
+                }
+
+                return list1;
+            }
+        }
+        for(int i=0;i<n;i++)
+        {
+            if(vis[i]==-1)
+            {
+                list1.add(i);
+            }
+        }
+        return list1;
+    }
+}
