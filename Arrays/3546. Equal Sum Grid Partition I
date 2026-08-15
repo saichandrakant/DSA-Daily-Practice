@@ -1,0 +1,41 @@
+https://leetcode.com/problems/equal-sum-grid-partition-i/description/?envType=daily-question&envId=2026-08-15
+class Solution {
+    public boolean canPartitionGrid(int[][] grid) {
+        int[] row=new int[grid.length];
+        int[] clm=new int[grid[0].length];
+        long total=0;
+        for(int i=0;i<grid.length;i++)
+        {
+            int sum1=0;
+            for(int j=0;j<grid[0].length;j++)
+            {
+                clm[j]=clm[j]+grid[i][j];
+                sum1=sum1+grid[i][j];
+                total=total+grid[i][j];
+            }
+            row[i]=sum1;
+        }
+          long prefix = 0;
+
+        for (int i = 0; i < row.length - 1; i++) {
+            prefix += row[i];
+
+            if (prefix == total - prefix) {
+                return true;
+            }
+        }
+
+        // Check vertical cuts
+        prefix = 0;
+
+        for (int i = 0; i < clm.length - 1; i++) {
+            prefix += clm[i];
+
+            if (prefix == total - prefix) {
+                return true;
+            }
+        }
+
+        return false;
+    }
+}
