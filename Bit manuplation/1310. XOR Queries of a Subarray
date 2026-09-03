@@ -1,0 +1,25 @@
+https://leetcode.com/problems/xor-queries-of-a-subarray/submissions/2129811498/
+class Solution {
+    public int[] xorQueries(int[] arr, int[][] queries) {
+        int[] ans=new int[queries.length];
+        int[] prev=new int[arr.length];
+        prev[0]=arr[0];
+        for(int i=1;i<arr.length;i++)
+        {
+            prev[i]=prev[i-1]^arr[i];
+        }
+        int index=0;
+        for(int[] arr1 : queries)
+        {
+            if(arr1[0]==0)
+            {
+                ans[index++]=prev[arr1[1]];
+            }
+            else
+            {
+            ans[index++]=prev[arr1[0]-1]^prev[arr1[1]];
+            }
+        }
+        return ans;
+    }
+}
