@@ -1,0 +1,16 @@
+https://leetcode.com/problems/find-xor-sum-of-all-pairs-bitwise-and/submissions/2129893571/
+class Solution {
+    public int getXORSum(int[] arr1, int[] arr2) {
+        int xor=0;
+        int xor1=0;
+        for(int i=0;i<arr2.length;i++)
+        {
+            xor=xor^arr2[i];
+        }
+        for(int i=0;i<arr1.length;i++)
+        {
+            xor1=xor1^(arr1[i] & xor);
+        }
+        return xor1;
+    }
+}
