@@ -7,6 +7,7 @@ This repo is a collection of my DSA practice. I regularly solve problems and pus
 ## Array
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [3875-construct-uniform-parity-array-i](https://github.com/saichandrakant/DSA-Daily-Practice/tree/main/3875-construct-uniform-parity-array-i/) | Easy |
 | [3903-smallest-stable-index-i](https://github.com/saichandrakant/DSA-Daily-Practice/tree/main/3903-smallest-stable-index-i/) | Easy |
 | [3904-smallest-stable-index-ii](https://github.com/saichandrakant/DSA-Daily-Practice/tree/main/3904-smallest-stable-index-ii/) | Medium |
 ## Prefix Sum
@@ -14,4 +15,8 @@ This repo is a collection of my DSA practice. I regularly solve problems and pus
 | ------- | ------- |
 | [3903-smallest-stable-index-i](https://github.com/saichandrakant/DSA-Daily-Practice/tree/main/3903-smallest-stable-index-i/) | Easy |
 | [3904-smallest-stable-index-ii](https://github.com/saichandrakant/DSA-Daily-Practice/tree/main/3904-smallest-stable-index-ii/) | Medium |
+## Math
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [3875-construct-uniform-parity-array-i](https://github.com/saichandrakant/DSA-Daily-Practice/tree/main/3875-construct-uniform-parity-array-i/) | Easy |
 <!---LeetCode Topics End-->
