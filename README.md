@@ -8,8 +8,10 @@ This repo is a collection of my DSA practice. I regularly solve problems and pus
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [3903-smallest-stable-index-i](https://github.com/saichandrakant/DSA-Daily-Practice/tree/main/3903-smallest-stable-index-i/) | Easy |
+| [3904-smallest-stable-index-ii](https://github.com/saichandrakant/DSA-Daily-Practice/tree/main/3904-smallest-stable-index-ii/) | Medium |
 ## Prefix Sum
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [3903-smallest-stable-index-i](https://github.com/saichandrakant/DSA-Daily-Practice/tree/main/3903-smallest-stable-index-i/) | Easy |
+| [3904-smallest-stable-index-ii](https://github.com/saichandrakant/DSA-Daily-Practice/tree/main/3904-smallest-stable-index-ii/) | Medium |
 <!---LeetCode Topics End-->
