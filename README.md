@@ -7,6 +7,7 @@ This repo is a collection of my DSA practice. I regularly solve problems and pus
 ## Array
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [3702-longest-subsequence-with-non-zero-bitwise-xor](https://github.com/saichandrakant/DSA-Daily-Practice/tree/main/3702-longest-subsequence-with-non-zero-bitwise-xor/) | Medium |
 | [3875-construct-uniform-parity-array-i](https://github.com/saichandrakant/DSA-Daily-Practice/tree/main/3875-construct-uniform-parity-array-i/) | Easy |
 | [3876-construct-uniform-parity-array-ii](https://github.com/saichandrakant/DSA-Daily-Practice/tree/main/3876-construct-uniform-parity-array-ii/) | Medium |
 | [3903-smallest-stable-index-i](https://github.com/saichandrakant/DSA-Daily-Practice/tree/main/3903-smallest-stable-index-i/) | Easy |
@@ -21,4 +22,8 @@ This repo is a collection of my DSA practice. I regularly solve problems and pus
 | ------- | ------- |
 | [3875-construct-uniform-parity-array-i](https://github.com/saichandrakant/DSA-Daily-Practice/tree/main/3875-construct-uniform-parity-array-i/) | Easy |
 | [3876-construct-uniform-parity-array-ii](https://github.com/saichandrakant/DSA-Daily-Practice/tree/main/3876-construct-uniform-parity-array-ii/) | Medium |
+## Bit Manipulation
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [3702-longest-subsequence-with-non-zero-bitwise-xor](https://github.com/saichandrakant/DSA-Daily-Practice/tree/main/3702-longest-subsequence-with-non-zero-bitwise-xor/) | Medium |
 <!---LeetCode Topics End-->
