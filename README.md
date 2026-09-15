@@ -7,6 +7,7 @@ This repo is a collection of my DSA practice. I regularly solve problems and pus
 ## Array
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [0835-image-overlap](https://github.com/saichandrakant/DSA-Daily-Practice/tree/main/0835-image-overlap/) | Medium |
 | [3702-longest-subsequence-with-non-zero-bitwise-xor](https://github.com/saichandrakant/DSA-Daily-Practice/tree/main/3702-longest-subsequence-with-non-zero-bitwise-xor/) | Medium |
 | [3875-construct-uniform-parity-array-i](https://github.com/saichandrakant/DSA-Daily-Practice/tree/main/3875-construct-uniform-parity-array-i/) | Easy |
 | [3876-construct-uniform-parity-array-ii](https://github.com/saichandrakant/DSA-Daily-Practice/tree/main/3876-construct-uniform-parity-array-ii/) | Medium |
@@ -61,4 +62,8 @@ This repo is a collection of my DSA practice. I regularly solve problems and pus
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [2265-count-nodes-equal-to-average-of-subtree](https://github.com/saichandrakant/DSA-Daily-Practice/tree/main/2265-count-nodes-equal-to-average-of-subtree/) | Medium |
+## Matrix
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [0835-image-overlap](https://github.com/saichandrakant/DSA-Daily-Practice/tree/main/0835-image-overlap/) | Medium |
 <!---LeetCode Topics End-->
