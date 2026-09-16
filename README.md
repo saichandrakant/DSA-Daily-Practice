@@ -7,6 +7,7 @@ This repo is a collection of my DSA practice. I regularly solve problems and pus
 ## Array
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [0349-intersection-of-two-arrays](https://github.com/saichandrakant/DSA-Daily-Practice/tree/main/0349-intersection-of-two-arrays/) | Easy |
 | [0835-image-overlap](https://github.com/saichandrakant/DSA-Daily-Practice/tree/main/0835-image-overlap/) | Medium |
 | [3702-longest-subsequence-with-non-zero-bitwise-xor](https://github.com/saichandrakant/DSA-Daily-Practice/tree/main/3702-longest-subsequence-with-non-zero-bitwise-xor/) | Medium |
 | [3875-construct-uniform-parity-array-i](https://github.com/saichandrakant/DSA-Daily-Practice/tree/main/3875-construct-uniform-parity-array-i/) | Easy |
@@ -41,10 +42,12 @@ This repo is a collection of my DSA practice. I regularly solve problems and pus
 ## Hash Table
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [0349-intersection-of-two-arrays](https://github.com/saichandrakant/DSA-Daily-Practice/tree/main/0349-intersection-of-two-arrays/) | Easy |
 | [3016-minimum-number-of-pushes-to-type-word-ii](https://github.com/saichandrakant/DSA-Daily-Practice/tree/main/3016-minimum-number-of-pushes-to-type-word-ii/) | Medium |
 ## Sorting
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [0349-intersection-of-two-arrays](https://github.com/saichandrakant/DSA-Daily-Practice/tree/main/0349-intersection-of-two-arrays/) | Easy |
 | [3016-minimum-number-of-pushes-to-type-word-ii](https://github.com/saichandrakant/DSA-Daily-Practice/tree/main/3016-minimum-number-of-pushes-to-type-word-ii/) | Medium |
 ## Counting
 | Problem Name | Difficulty |
@@ -66,4 +69,12 @@ This repo is a collection of my DSA practice. I regularly solve problems and pus
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0835-image-overlap](https://github.com/saichandrakant/DSA-Daily-Practice/tree/main/0835-image-overlap/) | Medium |
+## Two Pointers
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [0349-intersection-of-two-arrays](https://github.com/saichandrakant/DSA-Daily-Practice/tree/main/0349-intersection-of-two-arrays/) | Easy |
+## Binary Search
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [0349-intersection-of-two-arrays](https://github.com/saichandrakant/DSA-Daily-Practice/tree/main/0349-intersection-of-two-arrays/) | Easy |
 <!---LeetCode Topics End-->
