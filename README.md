@@ -32,6 +32,7 @@ This repo is a collection of my DSA practice. I regularly solve problems and pus
 ## String
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [0242-valid-anagram](https://github.com/saichandrakant/DSA-Daily-Practice/tree/main/0242-valid-anagram/) | Easy |
 | [3014-minimum-number-of-pushes-to-type-word-i](https://github.com/saichandrakant/DSA-Daily-Practice/tree/main/3014-minimum-number-of-pushes-to-type-word-i/) | Easy |
 | [3016-minimum-number-of-pushes-to-type-word-ii](https://github.com/saichandrakant/DSA-Daily-Practice/tree/main/3016-minimum-number-of-pushes-to-type-word-ii/) | Medium |
 ## Greedy
@@ -42,11 +43,13 @@ This repo is a collection of my DSA practice. I regularly solve problems and pus
 ## Hash Table
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [0242-valid-anagram](https://github.com/saichandrakant/DSA-Daily-Practice/tree/main/0242-valid-anagram/) | Easy |
 | [0349-intersection-of-two-arrays](https://github.com/saichandrakant/DSA-Daily-Practice/tree/main/0349-intersection-of-two-arrays/) | Easy |
 | [3016-minimum-number-of-pushes-to-type-word-ii](https://github.com/saichandrakant/DSA-Daily-Practice/tree/main/3016-minimum-number-of-pushes-to-type-word-ii/) | Medium |
 ## Sorting
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [0242-valid-anagram](https://github.com/saichandrakant/DSA-Daily-Practice/tree/main/0242-valid-anagram/) | Easy |
 | [0349-intersection-of-two-arrays](https://github.com/saichandrakant/DSA-Daily-Practice/tree/main/0349-intersection-of-two-arrays/) | Easy |
 | [3016-minimum-number-of-pushes-to-type-word-ii](https://github.com/saichandrakant/DSA-Daily-Practice/tree/main/3016-minimum-number-of-pushes-to-type-word-ii/) | Medium |
 ## Counting
