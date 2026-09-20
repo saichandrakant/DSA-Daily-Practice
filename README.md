@@ -23,6 +23,7 @@ This repo is a collection of my DSA practice. I regularly solve problems and pus
 ## Math
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [0009-palindrome-number](https://github.com/saichandrakant/DSA-Daily-Practice/tree/main/0009-palindrome-number/) | Easy |
 | [0412-fizz-buzz](https://github.com/saichandrakant/DSA-Daily-Practice/tree/main/0412-fizz-buzz/) | Easy |
 | [3014-minimum-number-of-pushes-to-type-word-i](https://github.com/saichandrakant/DSA-Daily-Practice/tree/main/3014-minimum-number-of-pushes-to-type-word-i/) | Easy |
 | [3875-construct-uniform-parity-array-i](https://github.com/saichandrakant/DSA-Daily-Practice/tree/main/3875-construct-uniform-parity-array-i/) | Easy |
