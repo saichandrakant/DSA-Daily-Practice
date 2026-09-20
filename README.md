@@ -36,6 +36,7 @@ This repo is a collection of my DSA practice. I regularly solve problems and pus
 ## String
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [0058-length-of-last-word](https://github.com/saichandrakant/DSA-Daily-Practice/tree/main/0058-length-of-last-word/) | Easy |
 | [0125-valid-palindrome](https://github.com/saichandrakant/DSA-Daily-Practice/tree/main/0125-valid-palindrome/) | Easy |
 | [0242-valid-anagram](https://github.com/saichandrakant/DSA-Daily-Practice/tree/main/0242-valid-anagram/) | Easy |
 | [0412-fizz-buzz](https://github.com/saichandrakant/DSA-Daily-Practice/tree/main/0412-fizz-buzz/) | Easy |
