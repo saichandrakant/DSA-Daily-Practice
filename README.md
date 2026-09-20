@@ -36,6 +36,7 @@ This repo is a collection of my DSA practice. I regularly solve problems and pus
 ## String
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [0125-valid-palindrome](https://github.com/saichandrakant/DSA-Daily-Practice/tree/main/0125-valid-palindrome/) | Easy |
 | [0242-valid-anagram](https://github.com/saichandrakant/DSA-Daily-Practice/tree/main/0242-valid-anagram/) | Easy |
 | [0412-fizz-buzz](https://github.com/saichandrakant/DSA-Daily-Practice/tree/main/0412-fizz-buzz/) | Easy |
 | [1002-find-common-characters](https://github.com/saichandrakant/DSA-Daily-Practice/tree/main/1002-find-common-characters/) | Easy |
@@ -82,6 +83,7 @@ This repo is a collection of my DSA practice. I regularly solve problems and pus
 ## Two Pointers
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [0125-valid-palindrome](https://github.com/saichandrakant/DSA-Daily-Practice/tree/main/0125-valid-palindrome/) | Easy |
 | [0349-intersection-of-two-arrays](https://github.com/saichandrakant/DSA-Daily-Practice/tree/main/0349-intersection-of-two-arrays/) | Easy |
 ## Binary Search
 | Problem Name | Difficulty |
