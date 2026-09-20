@@ -23,6 +23,7 @@ This repo is a collection of my DSA practice. I regularly solve problems and pus
 ## Math
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [0412-fizz-buzz](https://github.com/saichandrakant/DSA-Daily-Practice/tree/main/0412-fizz-buzz/) | Easy |
 | [3014-minimum-number-of-pushes-to-type-word-i](https://github.com/saichandrakant/DSA-Daily-Practice/tree/main/3014-minimum-number-of-pushes-to-type-word-i/) | Easy |
 | [3875-construct-uniform-parity-array-i](https://github.com/saichandrakant/DSA-Daily-Practice/tree/main/3875-construct-uniform-parity-array-i/) | Easy |
 | [3876-construct-uniform-parity-array-ii](https://github.com/saichandrakant/DSA-Daily-Practice/tree/main/3876-construct-uniform-parity-array-ii/) | Medium |
@@ -34,6 +35,7 @@ This repo is a collection of my DSA practice. I regularly solve problems and pus
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0242-valid-anagram](https://github.com/saichandrakant/DSA-Daily-Practice/tree/main/0242-valid-anagram/) | Easy |
+| [0412-fizz-buzz](https://github.com/saichandrakant/DSA-Daily-Practice/tree/main/0412-fizz-buzz/) | Easy |
 | [1002-find-common-characters](https://github.com/saichandrakant/DSA-Daily-Practice/tree/main/1002-find-common-characters/) | Easy |
 | [3014-minimum-number-of-pushes-to-type-word-i](https://github.com/saichandrakant/DSA-Daily-Practice/tree/main/3014-minimum-number-of-pushes-to-type-word-i/) | Easy |
 | [3016-minimum-number-of-pushes-to-type-word-ii](https://github.com/saichandrakant/DSA-Daily-Practice/tree/main/3016-minimum-number-of-pushes-to-type-word-ii/) | Medium |
@@ -83,4 +85,8 @@ This repo is a collection of my DSA practice. I regularly solve problems and pus
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0349-intersection-of-two-arrays](https://github.com/saichandrakant/DSA-Daily-Practice/tree/main/0349-intersection-of-two-arrays/) | Easy |
+## Simulation
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [0412-fizz-buzz](https://github.com/saichandrakant/DSA-Daily-Practice/tree/main/0412-fizz-buzz/) | Easy |
 <!---LeetCode Topics End-->
