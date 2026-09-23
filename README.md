@@ -8,6 +8,7 @@ This repo is a collection of my DSA practice. I regularly solve problems and pus
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0001-two-sum](https://github.com/saichandrakant/DSA-Daily-Practice/tree/main/0001-two-sum/) | Easy |
+| [0121-best-time-to-buy-and-sell-stock](https://github.com/saichandrakant/DSA-Daily-Practice/tree/main/0121-best-time-to-buy-and-sell-stock/) | Easy |
 | [0349-intersection-of-two-arrays](https://github.com/saichandrakant/DSA-Daily-Practice/tree/main/0349-intersection-of-two-arrays/) | Easy |
 | [0835-image-overlap](https://github.com/saichandrakant/DSA-Daily-Practice/tree/main/0835-image-overlap/) | Medium |
 | [1002-find-common-characters](https://github.com/saichandrakant/DSA-Daily-Practice/tree/main/1002-find-common-characters/) | Easy |
@@ -96,4 +97,8 @@ This repo is a collection of my DSA practice. I regularly solve problems and pus
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0412-fizz-buzz](https://github.com/saichandrakant/DSA-Daily-Practice/tree/main/0412-fizz-buzz/) | Easy |
+## Dynamic Programming
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [0121-best-time-to-buy-and-sell-stock](https://github.com/saichandrakant/DSA-Daily-Practice/tree/main/0121-best-time-to-buy-and-sell-stock/) | Easy |
 <!---LeetCode Topics End-->
