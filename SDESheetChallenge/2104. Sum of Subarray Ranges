@@ -1,0 +1,120 @@
+https://leetcode.com/problems/sum-of-subarray-ranges/submissions/2199869774/
+class Pair
+{
+    int first;
+    int sec;
+    Pair(int first,int sec)
+    {
+        this.first=first;
+        this.sec=sec;
+    }
+}
+class Solution {
+    public long subArrayRanges(int[] nums) {
+        long cnt=0;
+        int[] next=gets(nums);
+        int[] prev=get1s(nums);
+        int[] nextg=getg(nums);
+        int[] prevg=getg1(nums);
+      
+            for (int i = 0; i < nums.length; i++) {
+            long maxContribution =
+                (long) nums[i] * (i - prevg[i]) * (nextg[i] - i);
+
+            long minContribution =
+                (long) nums[i] * (i - prev[i]) * (next[i] - i);
+
+            cnt += maxContribution - minContribution;
+        }
+        
+        return cnt;
+    }
+   static int[] gets(int[] nums)
+    {
+        int[] arr=new int[nums.length];
+        Stack<Pair> st=new Stack<>();
+        for(int i=nums.length-1;i>=0;i--)
+        {
+            while(!st.isEmpty() && st.peek().first>nums[i] )
+            {
+                st.pop();
+            }
+            if(st.isEmpty())
+            {
+                arr[i]=nums.length;
+            }
+            else
+            {
+                arr[i]=st.peek().sec;
+            }
+            st.push(new Pair(nums[i],i));
+        }
+        return arr;
+    }
+    static int[] get1s(int[] nums)
+    {
+        int[] arr=new int[nums.length];
+        Stack<Pair> st=new Stack<>();
+        for(int i=0;i<nums.length;i++)
+        {
+            while(!st.isEmpty() && st.peek().first>=nums[i] )
+            {
+                st.pop();
+            }
+            if(st.isEmpty())
+            {
+                arr[i]=-1;
+            }
+            else
+            {
+                arr[i]=st.peek().sec;
+            }
+            st.push(new Pair(nums[i],i));
+        }
+        return arr;
+    }
+    static int[] getg(int[] nums)
+    {
+       int[] arr=new int[nums.length];
+        Stack<Pair> st=new Stack<>();
+        for(int i=nums.length-1;i>=0;i--)
+        {
+            while(!st.isEmpty() && st.peek().first<=nums[i] )
+            {
+                st.pop();
+            }
+            if(st.isEmpty())
+            {
+                arr[i]=nums.length;
+            }
+            else
+            {
+                arr[i]=st.peek().sec;
+            }
+            st.push(new Pair(nums[i],i));
+        }
+        return arr;
+    }
+    static int[] getg1(int[] nums)
+    {
+         int[] arr=new int[nums.length];
+        Stack<Pair> st=new Stack<>();
+        for(int i=0;i<nums.length;i++)
+        {
+            while(!st.isEmpty() && st.peek().first<nums[i] )
+            {
+                st.pop();
+            }
+            if(st.isEmpty())
+            {
+                arr[i]=-1;
+            }
+            else
+            {
+                arr[i]=st.peek().sec;
+            }
+            st.push(new Pair(nums[i],i));
+        }
+        return arr;
+    }
+}
