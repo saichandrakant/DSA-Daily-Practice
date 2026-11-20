@@ -1,0 +1,57 @@
+https://leetcode.com/problems/sum-of-subarray-minimums/description/
+class Pair
+{
+    int first;
+    int sec;
+    Pair(int first,int sec)
+    {
+        this.first=first;
+        this.sec=sec;
+    }
+}
+class Solution {
+    public int sumSubarrayMins(int[] arr) {
+        long cnt=0;
+        int[] prev=new int[arr.length];
+        int[] next=new int[arr.length];
+        Stack<Pair> st=new Stack<>();
+        Stack<Pair> st1=new Stack<>();
+        for(int i=arr.length-1;i>=0;i--)
+        {
+            while(!st.isEmpty() && st.peek().first>=arr[i])
+            {
+                st.pop();
+            }
+            if(st.isEmpty())
+            {
+                next[i]=arr.length;
+            }
+            else
+            {
+                next[i]=st.peek().sec;
+            }
+            st.push(new Pair(arr[i],i));
+        }
+    for(int i=0;i<arr.length;i++)
+        {
+            while(!st1.isEmpty() && st1.peek().first>arr[i])
+            {
+                st1.pop();
+            }
+            if(st1.isEmpty())
+            {
+                prev[i]=-1;
+            }
+            else
+            {
+                prev[i]=st1.peek().sec;
+            }
+            st1.push(new Pair(arr[i],i));
+        }
+    for(int i=0;i<arr.length;i++)
+    {
+        cnt += (long) arr[i] * (i - prev[i]) * (next[i] - i);
+    }
+    return (int)(cnt % 1000000007);
+}
+}
